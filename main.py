@@ -33,7 +33,7 @@ async def startmessage(event):
       ok = event.chat_id
       await client.send_message(event.chat_id,
                                 message=START_TEXT,
-                                buttons=[[Button.url("Developer","https://t.me/TGdarkdeveloper"),
+                                buttons=[[Button.url("Developer"."https://t.me/TGdarkdeveloper"),
                                          Button.url("Geliştirici"."https://t.me/TGdarkdeveloper")]])                                                                
     if event.message.media:
       await client.send_message(event.chat_id,file=event.message.media)
